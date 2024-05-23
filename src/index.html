@@ -8,6 +8,31 @@
 </head>
 
 <body>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+
+  <main>
+    <ul>
+      <li data-testid="character-count" class="metricas">Caracteres: </li>
+      <li data-testid="character-no-spaces-count" class="metricas">Caracteres Sin Espacio: </li>
+      <li data-testid="word-count" class="metricas">Palabras: </li>
+      <li data-testid="number-count" class="metricas">Números: </li>
+      <li data-testid="number-sum" class="metricas">Suma de Números: </li>
+      <li data-testid="word-length-average" class="metricas">Promedio de Longitud: </li>
+    </ul>
+
+    <!--ver si usar section o no-->
+    <section>
+      <label for="contenido">Texto a analizar</label>
+      <textarea id="contenido" name="user-input" placeholder="Escribir o copiar/pegar tu contenido aquí."></textarea>
+      <button id="reset-button">Limpiar contenido</button>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Creado por: Pascale Stavelot Q.</p>
+  </footer>
   <script src="index.js" type="module"></script>
 </body>
 </html>
