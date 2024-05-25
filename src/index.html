@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,20 +16,25 @@
   </header>
 
   <main>
-    <ul>
-      <li data-testid="character-count" class="metricas">Caracteres: </li>
-      <li data-testid="character-no-spaces-count" class="metricas">Caracteres Sin Espacio: </li>
-      <li data-testid="word-count" class="metricas">Palabras: </li>
-      <li data-testid="number-count" class="metricas">Números: </li>
-      <li data-testid="number-sum" class="metricas">Suma de Números: </li>
-      <li data-testid="word-length-average" class="metricas">Promedio de Longitud: </li>
-    </ul>
-
-    <!--ver si usar section o no-->
     <section>
-      <h3>Texto a analizar</h3>
-      <textarea name="user-input" placeholder="Escribir o copiar/pegar tu contenido aquí."></textarea>
-      <button id="reset-button">Limpiar contenido</button>
+      <div class="centrar-contenedor">
+        <ul>
+          <li data-testid="character-count" class="metricas">Caracteres: </li>
+          <li data-testid="character-no-spaces-count" class="metricas">Caracteres Sin Espacio: </li>
+          <li data-testid="word-count" class="metricas">Palabras: </li>
+          <li data-testid="number-count" class="metricas">Números: </li>
+          <li data-testid="number-sum" class="metricas">Suma de Números: </li>
+          <li data-testid="word-length-average" class="metricas">Promedio de Longitud: </li>
+        </ul>        
+      </div>
+    </section>
+
+    <section>
+      <div class="centrar-contenedor">
+        <h3>Texto a analizar</h3>
+        <textarea name="user-input" placeholder="Escribir o copiar/pegar tu contenido aquí."></textarea>
+        <button id="reset-button">Limpiar contenido</button>
+      </div>
     </section>
   </main>
   
