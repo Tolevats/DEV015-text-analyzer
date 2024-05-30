@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cntdrCaracteresSin = document.querySelector('[data-testid="character-no-spaces-count"]');
   const cntdrPalabras = document.querySelector('[data-testid="word-count"]');
   const cntdrNumeros = document.querySelector('[data-testid="number-count"]');
+  const cntdrSumaNum = document.querySelector('[data-testid="number-sum"]');
+  const cntdrLongPal = document.querySelector('[data-testid="word-length-average"]');
 
   //Event listener para borrar el contenido del textarea al hacer click al botón
   btnResetear.addEventListener('click', () => {
@@ -21,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     cntdrCaracteresSin.textContent = 'Caracteres Sin Espacio: 0';
     cntdrPalabras.textContent = 'Palabras: 0';
     cntdrNumeros.textContent = 'Números: 0';
+    cntdrSumaNum.textContent = 'Suma de Números: 0';
+    cntdrLongPal.textContent = 'Promedio de Longitud: 0';
   });
 
   //Event listener para escuchar contenido ingresado en el textarea
@@ -40,5 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const verCntdrNumeros = analyzer.getNumberCount(contenido);
     cntdrNumeros.textContent = `Números: ${verCntdrNumeros}`;
+
+    const verCntdrSumaNum = analyzer.getNumberSum(contenido);
+    cntdrSumaNum.textContent = `Suma de Números: ${verCntdrSumaNum}`;
+
+    const verCntdrLongPal = analyzer.getAverageWordLength(contenido);
+    cntdrLongPal.textContent = `Promedio de Longitud: ${verCntdrLongPal}`;
   });
 });
