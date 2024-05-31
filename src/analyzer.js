@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 //Declaración del objeto `analyzer`
 const analyzer = {
   //Lo siguiente son métodos que toman un string `text` como parámetro según cada función (clave + valor) 
