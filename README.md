@@ -1,50 +1,46 @@
+<a name="top"></a>
 # Analizador de texto
-
 
 ## Índice
 
+* [1. Introducción](#1-introducción-keyboard)
+* [2. Funcionalidad](#2-funcionalidad-gear)
+* [3. Diseño](#3-diseño-art)
 
-* [1. Introducción](#1-introducción)
-* [2. Funcionalidad](#2-funcionalidad)
-* [3. Diseño](#3-diseño)
+## 1. Introducción :keyboard:
 
+Esta aplicación web es un analizador de texto cuyo objetivo es extraer información útil de un texto ingresado por la usuaria en el navegador.
 
-## 🏗️ 1. Introducción
+Esta aplicación busca ayudar a las usuarias a obtener una comprensión más profunda de los elementos contenidos dentro de su texto como el recuento de caracteres, palabras, y números.
 
-
-_Aquí escribir una introducción de mi app web diseñada como:_
-<br>Esta aplicación web es un analizador de texto cuyo objetivo es extraer información útil de un
-texto ingresado (enviado como _input_) por la usuaria en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. 
 Todo esto utilizando HTML, CSS y JavaScript.
-Esta aplicación busca ayudar a las usuarias a obtener una comprensión más profunda de los elementos contenidos en su texto.
 
+## 2. Funcionalidad :gear:
 
-## 🏗️ 2. Funcionalidad
+La aplicación permite que la usuaria ingrese un texto escribiéndolo en un cuadro de texto y mostrando los contadores de las métricas en tiempo real. 
 
+A medida que la usuaria escribe, la aplicación calcula:
 
-La aplicación permite a la usuaria ingresar un texto escribiéndolo
-en un cuadro de texto y calcula en tiempo real mostrándoselo a la usuaria:<br>
-    - **Recuento de palabras**<br>
-    - **Recuento de caracteres**<br>
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**<br>
-    - **Recuento de números**<br>
-    - **Suma total de números**<br>
-    - **Longitud media de las palabras**<br>
+  1. **Recuento de caracteres**: cuenta el número total de caracteres en el texto, incluyendo espacios.
+  2. **Recuento de caracteres excluyendo espacios y signos de puntuación**: cuenta el número total de caracteres en el texto, excluyendo espacios y signos de puntuación.
+  3. **Recuento de palabras**: cuenta el número de palabras en el texto. 
+  4. **Recuento de números**: cuenta el número de caracteres numéricos en el texto.
+  5. **Suma total de números**: suma todos los números en el texto.
+  6. **Longitud media de las palabras**: calcula el promedio de la longitud de las palabras en el texto.
+
 La usuaria puede también limpiar el contenido de la caja de texto haciendo clic en un botón e iniciar desde 0 otra vez.
 
-### *Funcionalidades opcionales*
-_Si termino todas las funcionalidades requeridas,intentaré implementar lo siguiente:_<br>
-_* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto vacía._<br>
-_* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo espacios._<br>
-_* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo caracteres de puntuación._<br>
+## 3. Diseño :art:
 
+Se adoptó un diseño más bien minimalista, limpio, considerando espacio negativo/en blanco y sin contenido visual adicional. 
 
-## 🏗️ 3. Diseño
+El diseño escogido es simple porque busca ser fácil de usar contribuyendo a mantener el foco de usuarias en el objetivo de esta aplicación web, esto es, que primero vea los contadores con los que podrá analizar y que luego tenga el espacio adecuado para que escriba o copie y pegue su contenido.
 
+Los colores utilizados usados pertenecen a una paleta de colores con armonía de color tríadica.
 
-_Aquí escribir sobre decisiones de diseño adoptadas_
-...
+El uso de tres tipografías distintas busca que usaria identifique los elementos con claridad, y que a la vez le sean familiares. 
+- La fuente empleada en `<header>` y `<footer>`, _Coming soon_, busca reflejar la escritura a mano.
+- La fuente empleada para los contadores, _Courier New_, apunta a la escritura en máquina/dispositivos.
+- La fuente empleada en `<textarea>`, _Verdana_, busca mayor accesibilidad.
+
+[Subir](#top)
